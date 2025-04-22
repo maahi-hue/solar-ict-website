@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import Lottie from "lottie-react";
-import animationData from "../../../public/tech.json";
+import animationData from "../assets/tech.json";
 
 const Banner1 = () => {
   const imageRef = useRef(null);

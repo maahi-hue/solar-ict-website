@@ -1,17 +1,17 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 import dynamic from "next/dynamic";
-import Banner1Footer from "./components/Banner1Footer";
-import Banner2 from "./components/Banner2";
-import Banner3 from "./components/Banner3";
-import Banner4 from "./components/Banner4";
-import Banner5 from "./components/Banner5";
-import Banner6 from "./components/Banner6";
-import Banner7 from "./components/Banner7";
-import Banner7Footer from "./components/Banner7Footer";
-import Footer from "./components/Footer";
+import Banner1Footer from "../components/Banner1Footer";
+import Banner2 from "../components/Banner2";
+import Banner3 from "../components/Banner3";
+import Banner4 from "../components/Banner4";
+import Banner5 from "../components/Banner5";
+import Banner6 from "../components/Banner6";
+import Banner7 from "../components/Banner7";
+import Banner7Footer from "../components/Banner7Footer";
+import Footer from "../components/Footer";
 
-const Banner1 = dynamic(() => import("./components/Banner1"), { ssr: false });
+const Banner1 = dynamic(() => import("../components/Banner1"), { ssr: false });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

@@ -1,7 +1,6 @@
-// src/components/yourfolder/Banner6.jsx
-import img1 from "../../../public/img1.jpg";
-import img2 from "../../../public/img2.jpg";
-import img3 from "../../../public/img3.jpg";
+import img1 from "../../public/img1.jpg";
+import img2 from "../../public/img2.jpg";
+import img3 from "../../public/img3.jpg";
 
 const cardData = [
   {

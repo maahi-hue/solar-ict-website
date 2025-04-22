@@ -1,9 +1,9 @@
 import Image from "next/image";
-import icon1 from "../../../public/i1.png";
-import icon2 from "../../../public/i2.png";
-import icon3 from "../../../public/i3.png";
-import icon4 from "../../../public/i4.png";
-import icon5 from "../../../public/i5.png";
+import icon1 from "../../public/i1.png";
+import icon2 from "../../public/i2.png";
+import icon3 from "../../public/i3.png";
+import icon4 from "../../public/i4.png";
+import icon5 from "../../public/i5.png";
 
 const icons = [icon1, icon2, icon3, icon4, icon5];
 

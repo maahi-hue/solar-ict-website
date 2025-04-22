@@ -1,10 +1,10 @@
 import Image from "next/image";
-import search from "../../../public/search.png";
-import globe from "../../../public/globe.png";
-import mail from "../../../public/mail.png";
-import phone from "../../../public/phone.png";
-import headset from "../../../public/headset.png";
-import help from "../../../public/help.png";
+import search from "../../public/search.png";
+import globe from "../../public/globe.png";
+import mail from "../../public/mail.png";
+import phone from "../../public/phone.png";
+import headset from "../../public/headset.png";
+import help from "../../public/help.png";
 
 const Navbar = () => {
   return (

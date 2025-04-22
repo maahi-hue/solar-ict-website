@@ -1,7 +1,7 @@
 import Image from "next/image";
-import icon1 from "../../../public/user.png";
-import icon2 from "../../../public/check.png";
-import icon3 from "../../../public/world-wide-web.png";
+import icon1 from "../../public/user.png";
+import icon2 from "../../public/check.png";
+import icon3 from "../../public/world-wide-web.png";
 
 const Banner3 = () => {
   return (
