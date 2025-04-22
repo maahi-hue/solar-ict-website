@@ -1,4 +1,15 @@
 @import "tailwindcss";
+@plugin "daisyui";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.inconsolata-regular {
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
 
 :root {
   --background: #ffffff;
@@ -22,5 +33,118 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto",
+    sans-serif;
+}
+
+@keyframes move-diagonal {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(100px, -80px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes move-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(120px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes move-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-120px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-zigzag {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(50px, -50px);
+  }
+
+  50% {
+    transform: translate(100px, 0px);
+  }
+
+  75% {
+    transform: translate(50px, 50px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.animate-diagonal {
+  animation: move-diagonal ease-in-out infinite;
+}
+
+.animate-horizontal {
+  animation: move-horizontal ease-in-out infinite;
+}
+
+.animate-vertical {
+  animation: move-vertical ease-in-out infinite;
+}
+
+.animate-zigzag {
+  animation: move-zigzag ease-in-out infinite;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+   scale: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    scale:1;
+  }
+}
+
+.block {
+  animation: appear 5s linear;
+  animation-timeline: view() ;
+  animation-range: entry 0 cover 40%;
+}
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
 }
