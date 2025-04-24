@@ -1,5 +1,5 @@
 import Image from "next/image";
-import banner from "../../public/banner4.png";
+import banner from "../../../public/banner4.png";
 const Banner4 = () => {
   return (
     <div className="bg-gradient-to-br bg-gradient-to-r from-[#021526] to-[#0C134F] min-h-screen text-white py-20">

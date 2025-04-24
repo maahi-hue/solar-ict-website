@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link"; // Import Link from next/link
 import search from "../../public/search.png";
 import globe from "../../public/globe.png";
 import mail from "../../public/mail.png";
@@ -13,63 +14,75 @@ const Navbar = () => {
         <div className="flex text-sm font-thin justify-between items-center flex-1 pt-2">
           <span className="flex gap-6">
             <div className="flex gap-2 items-center">
-              <Image width="20" height="20" src={mail} />
+              <Image width="20" height="20" src={mail} alt="Mail" />
               <p>info@solar-ict.com</p>
             </div>
             <div className="flex gap-2 items-center">
-              <Image width="20" height="20" src={phone} />
+              <Image width="20" height="20" src={phone} alt="Phone" />
               <p>+41 21 561 53 15</p>
             </div>
           </span>
           <span className="flex gap-6">
             <div className="flex gap-2 items-center">
-              <Image width="20" height="20" src={headset} />
+              <Image width="20" height="20" src={headset} alt="Support" />
               <p>Support</p>
             </div>
             <div className="flex gap-2 items-center">
-              <Image width="20" height="20" src={help} />
+              <Image width="20" height="20" src={help} alt="Help" />
               <p>Help</p>
             </div>
           </span>
         </div>
       </div>
+
       <div className="navbar blackdrop-grayscale-200 bg-white/10 max-w-6xl mt-4 rounded-lg h-20 mx-auto">
         <div className="flex-1">
-          <a className="inconsolata-regular text-2xl font-semibold p-6 hover:text-pink-500">
-            SOLAR-ICT
-          </a>
+          <Link href="/">
+            <p className="inconsolata-regular text-2xl font-semibold p-6 hover:text-pink-500">
+              SOLAR-ICT
+            </p>
+          </Link>
         </div>
+
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1 gap-2 items-center justify-center">
             <li>
-              <a className=" hover:text-pink-500">Home</a>
+              <Link href="/" className="hover:text-pink-500">
+                Home
+              </Link>
             </li>
             <li>
-              <a className=" hover:text-pink-500">About Us</a>
+              <Link href="/about" className="hover:text-pink-500">
+                About Us
+              </Link>
             </li>
             <li>
               <details>
-                <summary className=" hover:text-pink-500">Our Services</summary>
-                <ul className="bg-base-100 rounded-t-none p-2">
+                <summary className="hover:text-pink-500">Our Services</summary>
+                <ul className="bg-base-100 text-black font-bold rounded-t-none p-2">
                   <li>
-                    <a>Link 1</a>
+                    <Link href="/services/web-development">
+                      Web Development
+                    </Link>
                   </li>
                   <li>
-                    <a>Link 2</a>
+                    <Link href="/services/cloud-solutions">
+                      Cloud Solutions
+                    </Link>
                   </li>
                 </ul>
               </details>
             </li>
             <li>
-              <a className=" hover:text-pink-500">Contact Us</a>
+              <Link href="/contact" className="hover:text-pink-500">
+                Contact Us
+              </Link>
             </li>
-            <button className=" hover:bg-gray-900 cursor-pointer p-4 shadow-none border-none items-center justify-center">
-              {" "}
-              <Image width="20" height="20" src={search} />
+            <button className="hover:bg-gray-900 cursor-pointer p-4 shadow-none border-none items-center justify-center">
+              <Image width="20" height="20" src={search} alt="Search" />
             </button>
             <button className="hover:bg-gray-900 cursor-pointer p-4 shadow-none border-none items-center justify-center">
-              {" "}
-              <Image width="20" height="20" src={globe} />
+              <Image width="20" height="20" src={globe} alt="Language" />
             </button>
           </ul>
         </div>
