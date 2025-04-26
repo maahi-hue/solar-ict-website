@@ -42,7 +42,7 @@ const Banner3 = () => {
           </p>
         </div>
 
-        <div className="flex flex-col divide-y divide-gray-200 bg-gradient-to-br from-[#021526] to-[#0C134F]  text-white rounded-lg shadow">
+        <div className="flex flex-col divide-y-2 divide-gray-200 bg-gradient-to-br from-[#021526] to-[#0C134F]  text-white rounded-lg shadow">
           {services.map((service, index) => {
             const isHovered = hoverIndex === index;
 

@@ -13,19 +13,19 @@ const Banner5 = () => {
   return (
     <div className="bg-gradient-to-br from-white to-indigo-100 py-10">
       <div className="max-w-6xl mx-auto text-center overflow-hidden">
-        <div className="mb-6 max-w-2xl mx-auto text-center">
-          <h1 className="text-3xl font-bold">
+        <div className="mb-6 max-w-2xl mx-auto text-center px-4">
+          <h1 className="text-2xl md:text-3xl font-bold">
             List of our expertise with the world's most trusted Technology
             providers:
           </h1>
         </div>
 
-        <div className="relative py-10 w-full">
-          <div className="flex whitespace-nowrap animate-scroll gap-12">
+        <div className="relative py-10 w-full overflow-hidden">
+          <div className="flex animate-scroll gap-12 min-w-max">
             {[...icons, ...icons].map((icon, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-28 h-16 flex justify-center items-center"
+                className="flex-shrink-0 w-24 md:w-28 h-16 flex justify-center items-center"
               >
                 <Image
                   src={icon}

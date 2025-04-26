@@ -1,8 +1,8 @@
 const Banner1Footer = () => {
   return (
     <div className="bg-gradient-to-br from-white to-indigo-100">
-      <div className="max-w-6xl mx-auto p-10 flex gap-20">
-        <div className="flex-1">
+      <div className="max-w-6xl mx-auto p-10 flex flex-col md:flex-row gap-10 md:gap-20">
+        <div className="flex-1 text-center md:text-left">
           <h1 className="text-3xl font-bold">
             Discover new opportunities for your business.
           </h1>
@@ -10,8 +10,7 @@ const Banner1Footer = () => {
             We are ready to assist you every step of the way.
           </p>
         </div>
-
-        <div className="w-1/2 flex items-center justify-end">
+        <div className="w-full md:w-1/2 flex items-center justify-center md:justify-end">
           <div className="flex items-center bg-white rounded-full shadow px-4 py-2 w-full max-w-md">
             <input
               type="text"

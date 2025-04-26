@@ -79,25 +79,24 @@ const Banner2 = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-9">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9">
           {cards.map((card, index) => (
             <div
               key={index}
-              className="h-50 bg-gradient-to-r from-[#480689] to-[#D4088C] hover:bg-gradient-to-l hover:scale-105 shadow-md hover:shadow-inner focus:shadow-inner shadow-pink-500 cursor-pointer border border-blue-900 text-bold font-extrabold transition duration-500 ease-in-out relative w-full  backdrop-blur-xl block rounded-3xl p-10 hover:p-9 text-left text-white flex flex-col justify-center"
+              className="max-w-5xl mx-auto h-auto bg-gradient-to-r from-[#480689] to-[#D4088C] hover:bg-gradient-to-l hover:scale-105 shadow-md hover:shadow-inner focus:shadow-inner shadow-pink-500 cursor-pointer border border-blue-900 text-bold font-extrabold transition duration-500 ease-in-out relative block rounded-3xl p-10 hover:p-9 text-left text-white flex flex-col justify-start"
             >
-              <div className="bg-gradient-to-t from-[#267FE5] to-[#6EE8FC] absolute top-0 left-6 transform -translate-y-1/2 w-12 h-12 rounded-full shadow-md">
+              <div className="bg-gradient-to-t from-[#267FE5] to-[#6EE8FC] absolute top-0 left-6 transform -translate-y-1/2 w-12 h-12 rounded-full shadow-md flex items-center justify-center">
                 {card.image && (
                   <Image
                     src={card.image}
                     alt={card.title}
                     width={24}
                     height={24}
-                    className="ml-3 mt-3 object-contain"
+                    className="object-contain"
                   />
                 )}
               </div>
-
-              <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
+              <h3 className="text-xl font-semibold mb-2 mt-8">{card.title}</h3>
               <p className="text-sm text-gray-200 font-normal">
                 {card.description}
               </p>

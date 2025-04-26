@@ -59,11 +59,13 @@ const Banner6 = () => {
   };
 
   return (
-    <div className="bg-gradient-to-tl from-[#021526] to-[#0C134F] py-20">
+    <div className="bg-gradient-to-tl from-[#021526] to-[#0C134F] py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <div className="p-10 max-w-2xl mx-auto text-white text-center">
-          <h1 className="text-3xl font-bold mb-2">Some Of Our Portfolios</h1>
-          <p className="text-gray-300 mt-4">
+        <div className="p-6 md:p-10 max-w-2xl mx-auto text-white text-center">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">
+            Some Of Our Portfolios
+          </h1>
+          <p className="text-gray-300 mt-4 text-base md:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
             nam quae consequatur consectetur harum eos porro id doloribus non
             molestiae.
@@ -74,20 +76,25 @@ const Banner6 = () => {
           {cardData.slice(0, visibleCards).map((card, index) => (
             <div
               key={index}
-              className="card bg-base-100 w-full shadow-lg transition-transform transform hover:scale-105"
+              className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 flex flex-col 
+      w-full max-w-md mx-auto"
             >
               <figure className="overflow-hidden">
                 <Image
                   src={card.image}
                   alt={card.title}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-58 object-cover"
                 />
               </figure>
-              <div className="card-body">
-                <h2 className="card-title">{card.title}</h2>
-                <p className="text-gray-700">{card.description}</p>
-                <div className="card-actions justify-center">
-                  <button className="shadow-md hover:shadow-inner focus:shadow-inner shadow-[#29335D] cursor-pointer mt-4 px-6 py-2 border border-[#29335D] rounded-3xl text-bold text-[#29335D] hover:scale-110 font-extrabold text-shadow-gray-500 hover:text-shadow-none transition duration-500 ease-in-out">
+              <div className="p-4 flex flex-col flex-grow">
+                <h2 className="text-xl font-semibold mb-2 text-[#021526]">
+                  {card.title}
+                </h2>
+                <p className="text-gray-700 mb-4 flex-grow">
+                  {card.description}
+                </p>
+                <div className="flex justify-center">
+                  <button className="shadow-md hover:shadow-inner focus:shadow-inner shadow-[#29335D] cursor-pointer px-6 py-2 border border-[#29335D] rounded-3xl text-bold text-[#29335D] hover:scale-110 font-extrabold transition duration-500 ease-in-out">
                     Learn More
                   </button>
                 </div>
@@ -100,14 +107,14 @@ const Banner6 = () => {
           {visibleCards < cardData.length ? (
             <button
               onClick={handleViewMore}
-              className="bg-gradient-to-r from-[#6EE8FC] to-[#267FE5] hover:bg-gradient-to-l hover:scale-105 shadow-md hover:shadow-inner focus:shadow-inner shadow-[#6EE8FC] cursor-pointer border border-blue-900 text-bold font-extrabold transition duration-500 ease-in-out mt-4 px-6 py-2 rounded-3xl"
+              className="bg-gradient-to-r from-[#6EE8FC] to-[#267FE5] hover:bg-gradient-to-l hover:scale-105 shadow-md hover:shadow-inner focus:shadow-inner shadow-[#6EE8FC] cursor-pointer border border-blue-900 font-extrabold transition duration-500 ease-in-out mt-4 px-8 py-2 rounded-3xl text-white text-lg"
             >
               View More
             </button>
           ) : (
             <button
               onClick={handleViewLess}
-              className="bg-gradient-to-r from-[#6EE8FC] to-[#267FE5] hover:bg-gradient-to-l hover:scale-105 shadow-md hover:shadow-inner focus:shadow-inner shadow-[#6EE8FC] cursor-pointer border border-blue-900 text-bold font-extrabold transition duration-500 ease-in-out mt-4 px-6 py-2 rounded-3xl"
+              className="bg-gradient-to-r from-[#6EE8FC] to-[#267FE5] hover:bg-gradient-to-l hover:scale-105 shadow-md hover:shadow-inner focus:shadow-inner shadow-[#6EE8FC] cursor-pointer border border-blue-900 font-extrabold transition duration-500 ease-in-out mt-4 px-8 py-3 rounded-3xl text-white text-lg"
             >
               View Less
             </button>
