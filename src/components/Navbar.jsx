@@ -64,22 +64,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <details>
-                <summary className="hover:text-pink-500">Our Services</summary>
-                <ul className="bg-base-100 text-black font-bold rounded-t-none p-2">
-                  <li>
-                    <Link href="/services/web-development">
-                      Web Development
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/services/cloud-solutions">
-                      Cloud Solutions
-                    </Link>
-                  </li>
-                </ul>
-              </details>
+              <Link href="/service" className="block py-2 hover:text-pink-500">
+                Our Services
+              </Link>
             </li>
+
             <li>
               <Link href="/contact" className="hover:text-pink-500">
                 Contact Us
@@ -131,30 +120,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <details className="text-white">
-                <summary className="block py-2 hover:text-pink-500">
-                  Our Services
-                </summary>
-                <ul className="bg-base-100 text-black font-bold rounded-t-none p-2">
-                  <li>
-                    <Link
-                      href="/services/web-development"
-                      className="block py-2"
-                    >
-                      Web Development
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services/cloud-solutions"
-                      className="block py-2"
-                    >
-                      Cloud Solutions
-                    </Link>
-                  </li>
-                </ul>
-              </details>
+              <Link href="/service" className="hover:text-pink-500">
+                Our Services
+              </Link>
             </li>
+
             <li>
               <Link href="/contact" className="block py-2 hover:text-pink-500">
                 Contact Us
