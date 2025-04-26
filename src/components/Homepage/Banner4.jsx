@@ -2,10 +2,10 @@ import Image from "next/image";
 import banner from "../../../public/banner4.png";
 const Banner4 = () => {
   return (
-    <div className="bg-gradient-to-br bg-gradient-to-r from-[#021526] to-[#0C134F] min-h-screen text-white py-20">
+    <div className="bg-gradient-to-br from-[#021526] to-[#0C134F] min-h-screen text-white py-20">
       <div className="mb-10 pt-12 text-center text-white">
         <h1 className="text-3xl font-bold mb-4">Who do we serve</h1>
-        <p className="max-w-3xl mx-auto">
+        <p className="max-w-3xl text-gray-300 mx-auto">
           At Solar-ICT, we serve a diverse range of clients, including
           enterprises, startups, developers, researchers, government agencies,
           and non-profits. Our scalable, cost-effective, and flexible solutions
@@ -19,7 +19,7 @@ const Banner4 = () => {
             <p>Comprehensive IT Solutions</p>
             <p>for Diverse Sectors</p>
           </h1>
-          <p className="mt-4">
+          <p className="mt-4 text-gray-300">
             At Solar-ICT, we serve a diverse range of clients, including
             enterprises, startups, developers, researchers, government agencies,
             and non-profits. Our scalable, cost-effective, and flexible
@@ -27,7 +27,7 @@ const Banner4 = () => {
             and support they need to enhance capabilities and streamline
             operations.
           </p>
-          <button className="bg-gradient-to-r from-[#480689] to-[#D4088C] cursor-pointer hover:bg-pink-600 mt-4 px-6 py-2 rounded-3xl">
+          <button className="bg-gradient-to-r from-[#480689] to-[#D4088C] hover:bg-gradient-to-l hover:scale-105 shadow-md hover:shadow-inner focus:shadow-inner shadow-pink-500 cursor-pointer border border-blue-900 text-bold font-extrabold transition duration-500 ease-in-out mt-4 px-6 py-2 rounded-3xl">
             Get in Touch
           </button>
         </div>

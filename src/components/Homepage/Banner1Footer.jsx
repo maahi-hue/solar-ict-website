@@ -6,7 +6,7 @@ const Banner1Footer = () => {
           <h1 className="text-3xl font-bold">
             Discover new opportunities for your business.
           </h1>
-          <p className="mt-4">
+          <p className="mt-4 text-gray-700">
             We are ready to assist you every step of the way.
           </p>
         </div>

@@ -35,14 +35,14 @@ const Banner3 = () => {
           <h1 className="text-3xl font-bold text-[#0D1E51] mb-4">
             How we serve
           </h1>
-          <p className="text-[#2B3674] max-w-3xl mx-auto">
+          <p className="text-gray-700 max-w-3xl mx-auto">
             You can easily tap into flexible and scalable IT resources without
             the hassle of setting up a complex in-house and cloud-based
             infrastructure with us.
           </p>
         </div>
 
-        <div className="flex flex-col divide-y divide-gray-200 bg-white rounded-lg shadow">
+        <div className="flex flex-col divide-y divide-gray-200 bg-gradient-to-br from-[#021526] to-[#0C134F]  text-white rounded-lg shadow">
           {services.map((service, index) => {
             const isHovered = hoverIndex === index;
 
@@ -52,7 +52,7 @@ const Banner3 = () => {
                 onMouseEnter={() => setHoverIndex(index)}
                 onMouseLeave={() => setHoverIndex(null)}
                 className={`relative group flex justify-between items-center px-6 py-8 transition-all duration-300 ${
-                  isHovered ? "bg-gray-100" : "hover:bg-gray-50"
+                  isHovered ? "bg-[#021526]" : "hover:bg-[#021526]"
                 }`}
               >
                 <div className="grid grid-cols-3 gap-4 w-full relative">
@@ -60,7 +60,7 @@ const Banner3 = () => {
                     <h3 className="text-lg font-semibold">{service.title}</h3>
                   </div>
                   <div className="flex flex-col justify-center">
-                    <p className="text-sm text-gray-600 mt-1 max-w-md">
+                    <p className="text-sm text-gray-300 mt-1 max-w-md">
                       {service.description}
                     </p>
                   </div>
@@ -72,7 +72,7 @@ const Banner3 = () => {
                     <span
                       className={`text-2xl transition-transform ${
                         isHovered
-                          ? "rotate-45 bg-[#DDE4FF] rounded-full px-4 py-2"
+                          ? "rotate-45 bg-[#DDE4FF] text-[#021526] rounded-full px-4 py-2"
                           : ""
                       }`}
                     >
@@ -83,7 +83,7 @@ const Banner3 = () => {
                   <div
                     className={`absolute right-20 -top-24 w-60 h-40 z-10 shadow-lg rounded-lg overflow-hidden transform transition-all duration-700 ease-in-out ${
                       isHovered
-                        ? "opacity-80 scale-100 rotate-[8deg]"
+                        ? "opacity-90 scale-100 rotate-[8deg]"
                         : "opacity-0 scale-90"
                     }`}
                   >
@@ -101,7 +101,7 @@ const Banner3 = () => {
         </div>
 
         <div className="text-center mt-10">
-          <button className="shadow-md hover:shadow-inner focus:shadow-inner shadow-[#29335D] cursor-pointer mt-4 px-6 py-2 border border-[#29335D] rounded-3xl text-bold text-[#29335D] hover:scale-110 text-shadow-sm font-extrabold text-shadow-gray-500 hover:text-shadow-none transition duration-500 ease-in-out">
+          <button className="shadow-md hover:shadow-inner focus:shadow-inner shadow-[#29335D] cursor-pointer mt-4 px-6 py-2 border border-[#29335D] rounded-3xl text-bold text-[#29335D] hover:scale-110 font-extrabold text-shadow-gray-500 hover:text-shadow-none transition duration-500 ease-in-out">
             Contact Us
           </button>
         </div>

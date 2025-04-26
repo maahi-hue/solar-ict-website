@@ -4,7 +4,9 @@ const Banner7Footer = () => {
       <div className="max-w-6xl mx-auto flex gap-20 text-white">
         <div className="flex-1">
           <h1 className="text-3xl font-bold">Subscribe To Our Newsletter!</h1>
-          <p className="mt-4">Get Regularly News and Exclusive Offers</p>
+          <p className="mt-4 text-gray-300">
+            Get Regularly News and Exclusive Offers
+          </p>
         </div>
 
         <div className="w-1/2 flex items-center justify-end">

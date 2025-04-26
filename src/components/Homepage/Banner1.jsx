@@ -69,12 +69,12 @@ const Banner1 = () => {
             <p>Transforming Technology</p>
             <p>Solutions for a Digital Future</p>
           </h1>
-          <p className="mt-4">
+          <p className="mt-4 text-gray-300">
             Delivering Sustainable Positive Impact through Expertly Crafted
             Infrastructure & Software Solutions. Empowering Your Business with
             Design, Development & Operations.
           </p>
-          <button className="shadow-md hover:shadow-inner focus:shadow-inner shadow-pink-500 cursor-pointer mt-4 px-6 py-2 border border-pink-500 rounded-3xl text-bold text-pink-500 hover:scale-110 text-shadow-sm font-extrabold text-shadow-gray-500 hover:text-shadow-none transition duration-500 ease-in-out">
+          <button className="bg-gradient-to-r from-[#480689] to-[#D4088C] hover:bg-gradient-to-l hover:scale-105 shadow-md hover:shadow-inner focus:shadow-inner shadow-pink-500 cursor-pointer border border-blue-900 text-bold font-extrabold transition duration-500 ease-in-out mt-4 px-6 py-2 rounded-3xl">
             Contact Us
           </button>
         </div>

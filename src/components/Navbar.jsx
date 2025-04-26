@@ -1,11 +1,12 @@
 import Image from "next/image";
-import Link from "next/link"; // Import Link from next/link
+import Link from "next/link";
 import search from "../../public/search.png";
 import globe from "../../public/globe.png";
 import mail from "../../public/mail.png";
 import phone from "../../public/phone.png";
 import headset from "../../public/headset.png";
 import help from "../../public/help.png";
+import logo from "../../public/logo.png";
 
 const Navbar = () => {
   return (
@@ -37,8 +38,9 @@ const Navbar = () => {
 
       <div className="navbar blackdrop-grayscale-200 bg-white/10 max-w-6xl mt-4 rounded-lg h-20 mx-auto">
         <div className="flex-1">
-          <Link href="/">
-            <p className="inconsolata-regular text-2xl font-semibold p-6 hover:text-pink-500">
+          <Link className="flex items-center" href="/">
+            <Image className="w-14 h-10 m-2" src={logo} alt="logo" />
+            <p className="inconsolata-regular text-2xl font-semibold py-6 hover:text-pink-500">
               SOLAR-ICT
             </p>
           </Link>
