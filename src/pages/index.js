@@ -7,7 +7,7 @@ import Banner3 from "../components/Homepage/Banner3";
 import Banner4 from "../components/Homepage/Banner4";
 import Banner5 from "../components/Homepage/Banner5";
 import Banner7 from "../components/Homepage/Banner7";
-import Banner7Footer from "../components/Homepage/Banner7Footer";
+import Banner7Footer from "../components/Banner7Footer";
 import Footer from "../components/Footer";
 
 const Banner1 = dynamic(() => import("../components/Homepage/Banner1"), { ssr: false });

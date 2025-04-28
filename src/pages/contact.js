@@ -1,15 +1,17 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Section1 from "../components/ContactUs/section1";
+import Section2 from "../components/ContactUs/section2";
+import Banner7Footer from "../components/Banner7Footer";
 
-export default function About() {
-  return (
+export default function Contact() {
+ return (
     <div>
       <Navbar />
-      <main className="px-6 py-12">
-        <h1 className="text-3xl font-bold">Contact Us</h1>
-        <p className="mt-4 text-gray-600">
-          This is the contact page of our website.
-        </p>
+      <main>
+        <Section1 />
+        <Section2 />
+        <Banner7Footer/>
       </main>
       <Footer />
     </div>
